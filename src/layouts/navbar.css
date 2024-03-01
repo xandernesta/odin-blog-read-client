@@ -1,0 +1,138 @@
+.header-item-container {
+  width: 100%;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  background-color: rgb(10, 10, 35);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 6px 5px rgba(0,0,0,.4);
+  z-index: 10;
+}
+.header-item.active {
+    border-bottom: .2rem solid rgb(20, 20, 200);
+}
+.header-item li {
+    padding: 1rem;
+}
+.header-items-left {
+  flex: 6;
+  padding-left: 1rem;
+}
+.header-title-link {
+    display: inline-block;
+    color: rgb(97, 218, 251);
+    width: 20vw;
+}
+.header-title-link:hover{
+    color: rgb(55, 55, 255);
+}
+.header-items-right {
+  flex: 3;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header-item a {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-style: normal;
+  color: rgb(97, 218, 251);
+  text-decoration: inherit;
+}
+.header-item-container li a:hover {
+  color: rgb(55, 55, 255);
+}
+.profile-div{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 6rem;
+  width: 6rem;
+  
+}
+#open-user-menu{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
+}
+.profile-icon{
+  justify-self: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+}
+.menu-container{
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  height: 2rem;
+  width: 8rem;
+  margin: 0 .5rem;
+  
+}
+.acct-menu {
+  align-items: center;
+  align-content:center;
+  background-color: rgb(212, 211, 211);
+  padding: .5rem;
+  border-radius: .25rem;
+
+}
+.acct-username{
+ color:#1a1a1a;
+ text-align: center;
+}
+.logout-btn{
+  width: 8rem;
+
+}
+@media (min-width: 965px) {
+  .header-items-left h1{
+    min-width: 35lvw;
+  }
+}
+@media (max-width: 965px) {
+  .header-item-container {
+    height: 14vh;
+  }
+  .header-items-left {
+    flex: 2;
+  }
+  .header-items-right{
+    flex: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-item-container {
+    height: 14vh;
+  }
+  .header-items-left {
+    flex: 2;
+  }
+  .header-items-right{
+    flex: 1;
+    
+  }
+  .profile-div{
+    width: 2rem;
+  }
+  .acct-menu .logout-btn{
+    width: 20dvw;
+    margin: 1dvw 6dvw 0 0 ;
+    font-size: 1rem;
+    padding: .4rem;
+  }
+}
+
